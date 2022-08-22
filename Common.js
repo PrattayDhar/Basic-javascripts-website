@@ -15,9 +15,12 @@ function topFive(Player, buttonPlayer) {
 function Validation(evnt) {
     const char = String.fromCharCode(evnt.which);
     if (!(/[0-9]/.test(char))) {
-        alert('Wrong Input');
+        alert('UPPS!! Please Give Number');
+
 
     }
+
+
 }
 
 
