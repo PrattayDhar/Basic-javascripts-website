@@ -88,7 +88,7 @@
                         <img src="images.jfif" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 id="player-name6" class="card-title pb-5">Ibramimcovich</h5>
-                            <button id="player-button6" class="btn btn-primary px-5"> Select </button>
+                            <button id="player-button6" class="btn btn-primary px-5" onkeypress="Validation(event)"> Select </button>
                         </div>
                     </div>
                 </div>
@@ -98,32 +98,32 @@
                             <h5 class="card-title text-center pt-4 ">Budget</h5>
                             <div class="d-flex justify-content-between pt-4 pb-4">
                                 <p>Per Player </p>
-                                <input id="playerinput" class="w-50 h-25 " type="text">
+                                <input id="playerinput" class="w-50 h-25 " type="text" onkeypress="Validation(event)">
                             </div>
                             <button id="FirstCalculation" class="btn btn-primary px-5"> Calculate </button>
                             <div class="d-flex justify-content-between pt-4">
                                 <h6>Player Expenses</h6>
                                 <div>
-                                        <span id="fild">0</span><span>$</span>
+                                    <span id="fild">0</span><span>$</span>
                                 </div>
-                                
+
                             </div>
                             <div class="d-flex justify-content-between pt-4">
                                 <p>Manager</p>
-                                <input id="Managerinput" class="w-50 h-25 " type="text">
+                                <input id="Managerinput" class="w-50 h-25 " type="text" onkeypress="Validation(event)">
                             </div>
                             <div class="d-flex justify-content-between pt-4 pb-4">
                                 <p>Couch</p>
-                                <input id="couchinput" class="w-50 h-25 " type="text">
+                                <input id="couchinput" class="w-50 h-25 " type="text" onkeypress="Validation(event)">
                             </div>
-                            <button id="total calculation" class="btn btn-primary px-5"> Calculate Total </button>
+                            <button id="total calculation" class="btn btn-primary px-5" > Calculate Total </button>
 
                             <div class="d-flex justify-content-between pt-4">
                                 <h6>Total</h6>
                                 <div>
                                     <span id="totaltextFild">0</span><span>$</span>
                                 </div>
-                                
+
 
                             </div>
                         </div>
@@ -149,7 +149,7 @@
 
 
 
-<script src="Common.js"></script>
+    <script src="Common.js"></script>
     <script src="Script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

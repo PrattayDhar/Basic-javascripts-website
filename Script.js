@@ -28,6 +28,7 @@ document.getElementById('FirstCalculation').addEventListener('click', function()
     let cost= newinput*len;
     const textfild= document.getElementById('fild');
     textfild.innerText=cost;
+    newinput.value='';
     
 })
 
@@ -38,10 +39,15 @@ document.getElementById('total calculation').addEventListener('click',function()
     const managerinput = parseInt(document.getElementById('Managerinput').value);
     const couchinput = parseInt(document.getElementById('couchinput').value);
     const playercost= parseInt(document.getElementById('fild').innerText);
-   const totalcost=managerinput+couchinput+playercost;
-
-    const totaltextFild = document.getElementById('totaltextFild');
-    totaltextFild.innerText=totalcost;
+        const totalcost = managerinput + couchinput + playercost;
+        const totaltextFild = document.getElementById('totaltextFild');
+        totaltextFild.innerText = totalcost;
+        managerinput.value = '';
+        couchinput.value = '';
+        
+ 
+   
+    
 
 
     

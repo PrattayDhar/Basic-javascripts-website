@@ -12,4 +12,14 @@ function topFive(Player, buttonPlayer) {
         alert('Your Limit Only Top 5')
 }
 
+function Validation(evnt) {
+    const char = String.fromCharCode(evnt.which);
+    if (!(/[0-9]/.test(char))) {
+        alert('Wrong Input');
+
+    }
+}
+
+
+
 
