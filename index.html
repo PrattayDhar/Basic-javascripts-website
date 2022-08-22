@@ -98,12 +98,15 @@
                             <h5 class="card-title text-center pt-4 ">Budget</h5>
                             <div class="d-flex justify-content-between pt-4 pb-4">
                                 <p>Per Player </p>
-                                <input  class="w-50 h-25 " type="text">
+                                <input id="playerinput" class="w-50 h-25 " type="text">
                             </div>
-                            <button class="btn btn-primary px-5"> Calculate </button>
+                            <button id="FirstCalculation" class="btn btn-primary px-5"> Calculate </button>
                             <div class="d-flex justify-content-between pt-4">
                                 <h6>Player Expenses</h6>
-                                <p>0<span>$</span></p>
+                                <div>
+                                        <span id="fild">0</span><span>$</span>
+                                </div>
+                                
                             </div>
                             <div class="d-flex justify-content-between pt-4">
                                 <p>Manager</p>
@@ -143,7 +146,7 @@
 
 
 
-
+<script src="Common.js"></script>
     <script src="Script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
