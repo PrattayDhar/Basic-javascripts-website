@@ -11,3 +11,5 @@ function topFive(Player, buttonPlayer) {
     else
         alert('Your Limit Only Top 5')
 }
+
+

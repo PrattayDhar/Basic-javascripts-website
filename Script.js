@@ -25,9 +25,25 @@ document.getElementById('FirstCalculation').addEventListener('click', function()
     const oldinput = document.getElementById('playerinput').value;
     const newinput = parseInt(oldinput);
     const len = document.getElementsByTagName('li').length;
-    const cost= newinput*len;
+    let cost= newinput*len;
     const textfild= document.getElementById('fild');
     textfild.innerText=cost;
+    
+})
+
+// Budget 2nd Part Calculation
+
+document.getElementById('total calculation').addEventListener('click',function(){
+
+    const managerinput = parseInt(document.getElementById('Managerinput').value);
+    const couchinput = parseInt(document.getElementById('couchinput').value);
+    const playercost= parseInt(document.getElementById('fild').innerText);
+   const totalcost=managerinput+couchinput+playercost;
+
+    const totaltextFild = document.getElementById('totaltextFild');
+    totaltextFild.innerText=totalcost;
+
+
     
 })
 
